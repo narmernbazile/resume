@@ -1,0 +1,174 @@
+\documentclass[letterpaper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage[default]{cantarell} %% Use option "defaultsans" to use cantarell as sans serif only
+    \usepackage{tabularx}
+    
+
+
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\LARGE \scshape {Narmer N. Bazile}}\\
+    \vspace{2mm}
+	narmernbazile@gmail.com $\cdot$ 475-422-3204 $\cdot$ linkedin.com/in/narmernbazile\\
+\end{center}
+\vspace{0.5mm}
+
+%==== Objective/Statement/Summarry ====%
+A 2nd year college student with progressive experience writing code and designing solutions. Seeking a challenging role as a software engineering intern. Adept at working effectively in fast paced, data driven settings that require strong organizational and analytical skills.
+\vspace{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{Bowdoin College}\\
+B.A. Computer Science; Mathematics \textit{GPA: 3.75} \hfill Sep 2021 - May 2025\\
+\vspace{0.5mm}
+
+
+\textbf{Shelton High School}\\
+Diploma with Distinction \textit{GPA: 4.23} \hfill Sep 2017 - June 2021\\
+\vspace{2mm}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+
+\begin{tabular}{l l l l }
+
+    \vspace{2mm}
+	\textbf{Programming Languages} & \hfill Java, Python, C/C++ & \textbf{Tools} & \hfill git, gdb, valgrind, bash\\
+    \textbf{Relevant Coursework} & Data Structures  & Algorithms & Linear Algebra\\
+                                 & Computer Systems & Operating Systems & Probability\\
+\end{tabular}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Bowdoin College Baldwin Center for Learning and Teaching}\\
+\vspace{1mm}
+Sep 2022 - Present \hspace{3.5mm}\textbar{}\space  \textit{Learning Assistant - CSCI 2200: Algorithms}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Directly supports students in their study of Algorithms during the lab section, where they are assigned to design their own algorithms to accomplish specific tasks. Role responsibilities include, answering questions, providing clarification, and providing detailed explanations of relevant topics.
+\end{itemize}
+\vspace{-1mm}
+
+Sep 2022 - Dec 2022 \space\textbar{}\space \textit{Learning Assistant - MATH 1710: Emerging Scholars Program}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Responsible for helping to guide students through their learning process, providing support and encouragement as they tackle difficult calculus topics and problems. The Emerging Scholars Program is an additional class available as a supplement to those taking Differential and Integral Calculus, designed especially to provide additional support and community for POC in Mathematics.
+ 
+\end{itemize}
+\textbf{Bowdoin College Computer Science Department}\\
+\vspace{1mm}
+Sep 2022 - Present \hspace{3.5mm}\textbar{}\space \textit{Course Grader - CSCI 2200: Algorithms}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Assists instructors in assessing student mastery of material in CSCI 2200 (Algorithms) and providing essential feedback to aid students\textquotesingle{} understanding.
+ 
+\end{itemize}
+\vspace{-1mm}
+Jan 2022 - May 2022 \space\textbar{}\space \textit{Course Grader - CSCI 2101: Data Structures}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Assisted instructors in assessing student mastery of material in CSCI 2101 (Data Structures) and providing essential feedback to aid students\textquotesingle{} understanding.
+\end{itemize}
+
+\textbf{Bowdoin College Office of Admissions}\\
+\vspace{1mm}
+March 2022 - Present \hspace{0.75mm}\textbar{}\space \textit{Tour Guide}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Responsibilities include leading groups of prospective students and their families on a tour of campus facilities while answering questions and providing interesting facts and achievements about the College
+\end{itemize}
+
+\vspace{-1mm}
+May 2022 - Aug 2022 \space\textbar{}\space \textit{Summer Intern}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked alongside Admissions Counselors to help inform prospective students and their families of what Bowdoin can offer as an academic institution.
+\end{itemize}
+
+%==== Projects ====%
+\header{Projects}
+{\textbf{Sudoku Solver}} {\sl Java} \hfill \\
+An implementation of a sudoku solving backtracking algorithm in Java. Utilizes OOP design to model both the state of the puzzle and the moves previously made.\\
+\vspace*{2mm}
+{\textbf{External Virtual Memory Pager}} {\sl C++} \\
+A robust external virtual memory pager implemented in C++. Receives and services memory requests from running processes to ensure that processes’ data either exists in physical memory or on the disk, allowing processes to extend memory and then receive and write to virtual memory addresses, all of which are backed by swap space on the disk. Keeps the pages a process uses most frequently in physical memory and moves pages into and out of memory when necessary in an effort to minimize disk reads and writes.\\
+\vspace*{2mm}
+
+
+\ 
+\end{document}
